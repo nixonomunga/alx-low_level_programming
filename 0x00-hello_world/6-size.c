@@ -1,0 +1,24 @@
+/*
+ *File name: 6-size.c
+11;rgb:0000/0000/0000*
+ *Made by: Nixon
+ */
+
+#include <stdio.h>
+/**
+ * main - starts and if successful returns zero
+ *
+ * Description: prints size of various types
+ *
+ * Return: 0 always.
+ */
+
+int main(void)
+{
+	printf("The size of an int is %zu bytes\n", sizeof(int));
+	printf("The size of a char is %zu bytes\n", sizeof(char));
+	printf("The size of a float is %zu bytes\n", sizeof(float));
+	printf("The size of a double is %zu bytes\n", sizeof(double));
+
+	return (0);
+}
