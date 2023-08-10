@@ -1,4 +1,4 @@
-/**
+/*
  *Program name: 5-printf.c
  *
  *Made by: Nixon
@@ -6,9 +6,10 @@
 
 #include <stdio.h>
 /**
- *main : is void and prints inserted words
+ * main - prints follwed by a newline
+ * Description: the programs uses printf to print output
  *
- *Return : 0 Always.
+ * Return: 0 - Always
  */
 int main(void)
 {
