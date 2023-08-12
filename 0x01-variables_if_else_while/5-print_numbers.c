@@ -18,7 +18,7 @@ int main(void)
 {
 	char u = '0';
 
-	for (; u < '10'; u++)
+	for (; u <= '9'; u++)
 	{
 		putchar(u);
 	}
