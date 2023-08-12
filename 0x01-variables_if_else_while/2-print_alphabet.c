@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 /**
- * main: entry
+ * main - entry point
  *
  * Description: prints alphabet in lowercase
  *
@@ -16,13 +16,13 @@
 
 int main(void)
 {
-  char u = 'a';
+	char u = 'a';
 
-  for(; u<='z'; u++)
-    putchar(u);
+	for (; u <= 'z'; u++)
+		putchar(u);
 
-  putchar(\n);
+	putchar("\n");
 
-  return (0);
-  
+	return (0);
+
 }
