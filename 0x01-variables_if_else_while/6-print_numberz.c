@@ -1,7 +1,7 @@
 /*
  * File: 6-print_numberz.c
  *
- *Made by: Nixon
+ * Made by: Nixon
  */
 
 #include <stdio.h>
@@ -16,13 +16,14 @@
 
 int main(void)
 {
-  int a = 0;
-  for(; a < 10; a++)
-    {
-      putchar(a);
-    }
+	char a = '0';
 
-  putchar(\n);
+	for (; a < '9'; a++)
+	{
+		putchar(a);
+	}
 
-  return (0);
+	putchar('\n');
+
+	return (0);
 }
