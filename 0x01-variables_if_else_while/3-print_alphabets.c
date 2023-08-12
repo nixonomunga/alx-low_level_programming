@@ -16,15 +16,15 @@
 
 int main(void)
 {
-  char u = 'a', q = 'A';
+	char u = 'a', q = 'A';
 
-  for(; u <= 'z', q <= 'Z'; u++, q++)
-    {
-      putchar(u);
-      putchar(q);
-    }
-  
-  putchar(\n);
+	for (; u <= 'z', q <= 'Z'; u++, q++)
+	{
+		putchar(u);
+		putchar(q);
+	}
 
-  return (0);
+	putchar('\n');
+
+	return (0);
 }
