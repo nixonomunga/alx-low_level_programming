@@ -16,7 +16,8 @@
 
 int main(void)
 {
-	int u = n = '0';
+	int u = '0';
+	int n = '0';
 
 	for (; u <= '9'; u++)
 	{
