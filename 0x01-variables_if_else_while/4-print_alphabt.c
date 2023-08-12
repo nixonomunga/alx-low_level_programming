@@ -20,7 +20,7 @@ int main(void)
 
 	for (; u <= 'z'; u++)
 	{
-		if (!(u == 'q' && u == 'e'))
+		if ((u != 'q' && u != 'e'))
 		{
 			putchar(u);
 		}
