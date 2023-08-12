@@ -21,9 +21,11 @@ int main(void)
 	for (; u <= 'z'; u++)
 	{
 		putchar(u);
+	}
 
-		for (; q <= 'Z'; q++)
-			putchar(q);
+	for (; q <= 'Z'; q++)
+	{
+		putchar(q);
 	}
 
 	putchar('\n');
