@@ -16,13 +16,14 @@
 
 int main(void)
 {
-  char u = 'z';
-  for (; u >= 'a'; u--)
-    {
-      putchar(u);
-    }
+	char u = 'z';
 
-  putchar(\n);
+	for (; u >= 'a'; u--)
+	{
+		putchar(u);
+	}
 
-  return (0);
+	putchar(\n);
+
+	return (0);
 }
