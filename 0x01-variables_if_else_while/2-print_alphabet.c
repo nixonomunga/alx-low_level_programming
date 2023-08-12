@@ -21,7 +21,7 @@ int main(void)
 	for (; u <= 'z'; u++)
 		putchar(u);
 
-	putchar("\n");
+	putchar('\n');
 
 	return (0);
 
