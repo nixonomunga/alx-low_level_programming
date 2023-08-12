@@ -16,10 +16,14 @@
 
 int main(void)
 {
-	int a;
+	char u = '0';
 
-	for (a = 0; a < 10; a++)
+	for (; u < '10'; u++)
 	{
-		printf("%d\n", a);
+		putchar(u);
 	}
+
+	putchar('\n');
+
+	return (0);
 }
