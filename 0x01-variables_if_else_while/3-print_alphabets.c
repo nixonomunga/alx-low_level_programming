@@ -18,7 +18,7 @@ int main(void)
 {
 	char u = 'a', q = 'A';
 
-	for (; u <= 'z', q <= 'Z'; u++, q++)
+	for (; u <= 'z' q <= 'Z'; u++, q++)
 	{
 		putchar(u);
 		putchar(q);
