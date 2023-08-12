@@ -16,19 +16,20 @@
 
 int main(void)
 {
-  int a = 0, i = 0;
-  for (; a < 10, i < 10; a++, i++)
-    {
-      putchar(a);
-      putchar(i);
+	int a = '0';
 
-      if ((c != 9) || (c == 9 && i != 9))
+	for (; a <= '9'; a++)
 	{
-	  putchar(',');
+		putchar(a);
+
+		if (a != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-    }
 
-  putchar(\n);
+	putchar('\n');
 
-  return (0);
+	return (0);
 }
