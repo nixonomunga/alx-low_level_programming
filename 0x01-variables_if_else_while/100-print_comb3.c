@@ -16,17 +16,16 @@
 
 int main(void)
 {
-	int u = '0';
-	int n = '0';
+	int u, n;
 
-	for (; u <= '9'; u++)
+	for (u = 0; u < 10; u++)
 	{
-		for (; n <= '9'; n++)
+		for (n = u + 1; n < 10; n++)
 		{
-			putchar(u);
-			putchar(n);
+			putchar(u + '0');
+			putchar(n + '0');
 
-			if ((u != '9') || (u == '9' && n != '9'))
+			if (u != 8 || n != 9)
 			{
 				putchar(',');
 				putchar(' ');
