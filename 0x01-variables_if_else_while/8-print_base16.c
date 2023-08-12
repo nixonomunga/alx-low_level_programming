@@ -1,4 +1,4 @@
-/**
+/*
  * File: 8-print_base16.c
  *
  * Made by: Nixon
@@ -7,9 +7,9 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - entry of program
  *
- * Description: Hexadecimal in lowercase
+ * Description: Printing of Hexadecimal
  *
  * Return: 0 always
  */
