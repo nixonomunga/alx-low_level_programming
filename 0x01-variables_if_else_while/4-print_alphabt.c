@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 /**
- * main: alphabet except q and e
+ * main - alphabet except q and e
  *
  * Descriprion: using putchar to print alphabet
  *
@@ -16,16 +16,17 @@
 
 int main(void)
 {
-  char u = 'a';
+	char u = 'a';
 
-  for (; u <= 'z'; u++)
-    {
-      if (!(u == 'q' && u == 'e'))
+	for (; u <= 'z'; u++)
 	{
-	  putchar(u);
+		if (!(u == 'q' && u == 'e'))
+		{
+			putchar(u);
+		}
 	}
-    }
-  putchar(\n);
 
-  return (0);
+	putchar('\n');
+
+	return (0);
 }
