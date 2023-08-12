@@ -7,22 +7,28 @@
 #include <stdio.h>
 
 /**
- * main - entry
+ * main - entry point
  *
- * Description - Hexadecimal in lowercase
+ * Description: Hexadecimal in lowercase
  *
  * Return: 0 always
  */
 
 int main(void)
 {
-  int u = 0x;
-  for(; ; u++)
-    {
-      putchar(u);
-    }
+	char u = '0';
 
-  putchar(\n);
+	for (; u <= '9'; u++)
+	{
+		putchar(u);
+	}
 
-  return (0);
+	for (u = 'a'; u <= 'f'; u++)
+	{
+		putchar(u);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
