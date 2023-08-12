@@ -18,10 +18,12 @@ int main(void)
 {
 	char u = 'a', q = 'A';
 
-	for (; u <= 'z' q <= 'Z'; u++, q++)
+	for (; u <= 'z'; u++)
 	{
 		putchar(u);
-		putchar(q);
+
+		for (; q <= 'Z'; q++)
+			putchar(q);
 	}
 
 	putchar('\n');
