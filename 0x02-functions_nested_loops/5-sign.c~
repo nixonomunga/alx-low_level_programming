@@ -1,0 +1,12 @@
+/*
+ * File: 5-sign.c
+ *
+ * Made by: Nixon
+ */
+
+#include "main.h"
+
+/**
+ * print_sign - prints sign of a number
+ *
+ * @

@@ -1,0 +1,20 @@
+/*
+ * File name: 10-add.c
+ *
+ * Made by: Nixon
+ */
+
+#include "main.h"
+
+/**
+ * add - adds two integer
+ *
+ * Return: integer if successful
+ */
+
+int add(int x, int y)
+{
+	int _addition = x + y;
+
+	return (_addition);
+}
