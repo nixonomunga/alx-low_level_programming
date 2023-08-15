@@ -39,10 +39,8 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			if (col == 9 && row == 9)
-			{
-				_putchar('\n');
-			}
 		}
+
+		_putchar('\n');
 	}
 }
