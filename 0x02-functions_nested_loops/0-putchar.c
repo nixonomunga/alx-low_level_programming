@@ -4,7 +4,7 @@
  * Made by; Nixon
  */
 
-#include <stdio.h>
+#include <main.h>
 
 /**
  * main - entry point of program
@@ -21,10 +21,10 @@ int main(void)
 
 	for (n = 0; n < 10; n++)
 	{
-		putchar(i[n]);
+		_putchar(i[n]);
 	}
 
-	putchar('\n');
+	_putchar('\n');
 
 	return (0);
 }
