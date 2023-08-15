@@ -9,6 +9,8 @@
 /**
  * print_alphabet_x10 - prints alphabet ten times
  *
+ * @void: empty
+ *
  * Return: void
  */
 
@@ -27,17 +29,4 @@ void print_alphabet_x10(void)
 
 		putchar('\n');
 	}
-}
-
-/**
- * main - entry point of program
- *
- * Return: 0 always
- */
-
-int main(void)
-{
-	print_alphabet_x10();
-
-	return (0);
 }
