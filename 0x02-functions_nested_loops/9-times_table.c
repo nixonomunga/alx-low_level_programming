@@ -39,7 +39,7 @@ void times_table(void)
 				_putchar(',');
 				_putchar(' ');
 			}
-			if (col = 9)
+			if (col == 9)
 			{
 				_putchar('\n');
 			}
