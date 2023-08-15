@@ -16,16 +16,16 @@
 
 int print_last_digit(int n)
 {
-	int x;
+	unsigned int x;
 
 	if ((n > 0) || (n < 0))
 	{
 		x = (n % 10);
-		return (x);
+		_putchar(x + '0');
 	}
 
 	else
 	{
-		return (0);
+		_putchar(x + '0');
 	}
 }
