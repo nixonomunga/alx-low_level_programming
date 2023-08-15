@@ -17,25 +17,31 @@
 
 void print_to_98(int n)
 {
-	int i;
+	int k;
 
-	for (i = n; i <= 98; i++)
+	if (n <= 98)
 	{
-		printf("%d", i);
-
-		if (i != 98)
+		for (k = n; k <= 98; k++)
 		{
-			printf(", ");
+			printf("%d", k);
+
+			if ki != 98)
+			{
+				printf(", ");
+			}
 		}
 	}
 
-	for (i = n; i >= 98; i--)
+	else if (n >= 98)
 	{
-		printf("%d", i);
-
-		if (i != 98)
+		for (k - n; k >= 98; k--)
 		{
-			printf(", ");
+			printf("%d", k);
+
+			if (k != 98)
+			{
+				printf(", ");
+			}
 		}
 	}
 
