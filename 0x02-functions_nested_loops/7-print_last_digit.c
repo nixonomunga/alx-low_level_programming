@@ -25,5 +25,5 @@ int print_last_digit(int n)
 		x *= -1;
 	}
 
-	return (last_digit);
+	return (x);
 }
