@@ -4,14 +4,14 @@
  * Made by: Nixon
  */
 
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - entry of program
+ * print_alphabet - prints alphabet
  *
- * Description: prints alphabet in lower case
+ * @void: empty
  *
- * Return: 0 always
+ * Return: void
  */
 
 void print_alphabet(void)
@@ -24,11 +24,4 @@ void print_alphabet(void)
 	}
 
 	putchar('\n');
-}
-
-int main(void)
-{
-	print_alphabet();
-
-	return (0);
 }
