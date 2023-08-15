@@ -16,13 +16,13 @@
 
 void print_times_table(int n)
 {
-	int x, y, result;
+	n[15][15];
 
-	n[][15];
+	int x, y;
 
-	for (x = 0; x <= n; x++)
+	for (x = 0; x <= 15; x++)
 	{
-		for (y = 0; y <= n; y++)
+		for (y = 0; y <= 15; y++)
 		{
 			result = x * y;
 
