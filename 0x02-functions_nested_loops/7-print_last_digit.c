@@ -16,17 +16,9 @@
 
 int print_last_digit(int n)
 {
-	int x;
+	int last_digit;
 
-	if ((n > 0) || (n < 0))
-	{
-		x = (n % 10);
-	}
+	last_digit = n % 10;
 
-	else
-	{
-		x = 0;
-	}
-
-	return (x);
+	return (last_digit);
 }
