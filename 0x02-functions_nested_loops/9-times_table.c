@@ -36,12 +36,12 @@ void times_table(void)
 
 			if (col == 9)
 			{
-				putchar(product + '0');
-				putchar(',');
-				putchar(' ');
+				_putchar(product + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 
-		putchar('\n');
+		_putchar('\n');
 	}
 }
