@@ -9,10 +9,12 @@
 /**
  * _abs - prints absolute value
  *
+ * @a: integer
+ *
  * Return: integer
  */
 
-int _abs(int)
+int _abs(int a)
 {
 	int a;
 
