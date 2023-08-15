@@ -5,29 +5,7 @@
  */
 
 #include <stdio.h>
-#include "main.h"
-/**
- * _islower - checks for lowercase
- *
- * @c: integer
- *
- * Return: 1 when successive
- */
-
-int _islower(int c)
-{
-	int c;
-
-	if ((c >= 'a') && (c <= 'z'))
-	{
-		return (1);
-	}
-
-	else
-	{
-		return (0);
-	}
-}
+#include "_islower.h"
 
 /**
  * main - Entry point of program
