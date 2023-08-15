@@ -4,8 +4,7 @@
  * Made by: Nixon
  */
 
-#include <stdio.h>
-#include "_islower.h"
+#include "main.h"
 
 /**
  * main - Entry point of program
