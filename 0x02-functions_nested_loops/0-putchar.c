@@ -19,7 +19,7 @@ int main(void)
 	char i[] = "_putchar";
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 0; n < 9; n++)
 	{
 		_putchar(i[n]);
 	}
