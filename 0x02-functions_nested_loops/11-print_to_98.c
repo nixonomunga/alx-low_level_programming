@@ -25,7 +25,7 @@ void print_to_98(int n)
 		{
 			printf("%d", k);
 
-			if ki != 98)
+			if (k != 98)
 			{
 				printf(", ");
 			}
