@@ -4,6 +4,7 @@
  * Made by: Nixon
  */
 
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -16,25 +17,17 @@
 
 void print_to_98(int n)
 {
-	for (n = 0; n <= 98; n++)
+	int i;
+
+	for (i = n; i <= 98; i++)
 	{
-		if (n < 10)
-		{
-			_putchar(n + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-
-		else if (n  >= 10)
-		{
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-		}
-
-		if ((n != 98) && (n >= 10))
-		{
-			_putchar(',');
-			_putchar(' ');
-		}
+		printf("%d, ", i);
 	}
+
+	for (i = n; i >= 98; i--)
+	{
+		printf("%d, ", i);
+	}
+
+	printf("\n");
 }
