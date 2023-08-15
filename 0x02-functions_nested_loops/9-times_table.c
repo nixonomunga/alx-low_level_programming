@@ -23,26 +23,25 @@ void times_table(void)
 		{
 			int product = row * col;
 
-			if (col == 10)
+			if (product < 10)
 			{
-				_putchar(row + '0');
+				_putchar(' ');
+				_putchar(' ');
 			}
-
-			if ((product < 10) && (row != 0))
-			{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(product + '0');
 
 			else if (product >= 10)
 			{
-				_putchar(',');
 				_putchar(' ');
-				_putchar((product / 10) + '0');
-				_putchar(product % 10) + '0');
+			}
+
+			if (col == 9)
+			{
+				putchar(product + '0');
+				putchar(',');
+				putchar(' ');
+			}
 		}
 
-		_putchar('\n');
+		putchar('\n');
 	}
 }
