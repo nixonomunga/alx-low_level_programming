@@ -15,8 +15,8 @@
 int main(void)
 {
 	int i;
-	unsigned long int prev = 0;
-	unsigned long int current = 1;
+	unsigned long int prev = 1;
+	unsigned long int current = 2;
 	unsigned long int next, sum_even = 0;
 	long limit = 4000000;
 
@@ -28,10 +28,10 @@ int main(void)
 			sum_even += next;
 		}
 
-		printf("%lu\n", sum_even);
-
 		current = next;
 		prev = current;
+
+		printf("%lu\n", sum_even);
 	}
 
 	return (0);
