@@ -24,6 +24,12 @@ int main(void)
 
 	for (i = current; i < limit; i++)
 	{
+		if ((unsigned long)current > (unsigned long)(-1) -
+		    (unsigned long)prev)
+		{
+			break;
+		}
+
 		next = current + prev;
 
 		printf(", %lu", next);
