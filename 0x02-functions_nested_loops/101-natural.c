@@ -14,14 +14,17 @@
 
 int main(void)
 {
-	int x, i;
+	int x = 0;
+	int i;
 
-	for (i = x = 0; i < 1024; i++)
+	for (i = 0; i < 1024; i++)
 	{
 		if (((x % 3) == 0) || ((x % 5) == 0))
 		{
-			printf("%d", i);
+			x += i;
 		}
+
+		printf("%d", x);
 	}
 
 	printf("\n");
