@@ -20,10 +20,10 @@ int main(void)
 	int start_2 = 2;
 	int _next;
 
+	printf("%d, %d", start_1, start_2);
+
 	for (i = 2; i < limit; i++)
 	{
-		printf("%d, %d", start_1, start_2);
-
 		_next = start_1 + start_2;
 		printf(", %d", _next);
 
