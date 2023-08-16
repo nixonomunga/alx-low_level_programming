@@ -22,7 +22,7 @@ int main(void)
 
 	printf("%d, %d", start_1, start_2);
 
-	for (i = 2; i < limit; i++)
+	for (i = start_2; i < limit; i++)
 	{
 		_next = start_1 + start_2;
 		printf(", %d", _next);
