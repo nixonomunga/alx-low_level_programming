@@ -23,8 +23,11 @@ int main(void)
 		_multiple = x * y;
 
 		for (i = x = y = 0; i < 1024; i++)
-	{
-		_multiple /= _multiple;
-		printf("%d\n", _multiple);
+		{
+			_multiple /= _multiple;
+			printf("%d\n", _multiple);
+		}
 	}
+
+	return (0);
 }
