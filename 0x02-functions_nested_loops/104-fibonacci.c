@@ -26,11 +26,11 @@ int main(void)
 	{
 		next = current + prev;
 
-		printf(", %lu", next);
-
 		current = prev;
 		prev = next;
 	}
+
+	printf(", %lu", next);
 
 	return (0);
 }
