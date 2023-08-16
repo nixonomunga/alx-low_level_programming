@@ -20,6 +20,8 @@ int main(void)
 	long next;
 	long limit = 4000000;
 
+	printf("%ld\n", current);
+
 	for (i = current; i < limit; i++)
 	{
 		next = current + prev;
