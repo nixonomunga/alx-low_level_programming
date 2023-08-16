@@ -28,7 +28,7 @@ int main(void)
 
 		start_1 = start_2;
 		start_2 = _next;
-		printf(", %d", _next);
+		printf(", %ld", _next);
 	}
 
 	printf("\n");
