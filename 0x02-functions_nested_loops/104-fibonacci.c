@@ -17,7 +17,7 @@ int main(void)
 	int i;
 	unsigned long int prev = 1, a = 0, hold_1;
 	unsigned long int current = 2, b = 0, hold_2, hold_3;
-	const unsigned long int MOD = 1000000000;
+	const unsigned long int MOD = 1000000000000000000;
 	int limit = 98;
 
 	printf("%lu, %lu", prev, current);
