@@ -19,19 +19,19 @@ int main(void)
 	int sum_even = 0;
 	int limit = 4000000;
 
-	while (prev <= limit)
+	while (current < limit)
 	{
-		if (prev % 2 == 0)
+		if (current % 2 == 0)
 		{
 			sum_even += prev;
 		}
 
-		c = prev;
+		c = current;
+		current += i;
 		prev = current;
-		current = c + current;
-
-		printf("%d\n", sum_even);
 	}
+
+	printf("%d\n", sum_even;
 
 	return (0);
 }
