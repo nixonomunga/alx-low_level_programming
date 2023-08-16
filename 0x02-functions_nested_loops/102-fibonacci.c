@@ -1,5 +1,5 @@
 /*
- * File: 102-fibonacci.c
+11;rgb:0000/0000/0000* File: 102-fibonacci.c
  *
  * Made by: Nixon
  */
@@ -18,7 +18,7 @@ int main(void)
 	int i;
 	int start_1 = 1;
 	int start_2 = 2;
-	int _next;
+	long int _next;
 
 	printf("%d, %d", start_1, start_2);
 
