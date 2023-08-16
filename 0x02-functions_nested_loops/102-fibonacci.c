@@ -25,10 +25,10 @@ int main(void)
 	for (i = start_2; i < limit; i++)
 	{
 		_next = start_1 + start_2;
-		printf(", %d", _next);
 
 		start_1 = start_2;
 		start_2 = _next;
+		printf(", %d", _next);
 	}
 
 	printf("\n");
