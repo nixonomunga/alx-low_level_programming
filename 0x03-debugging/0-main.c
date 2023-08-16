@@ -1,15 +1,9 @@
-/*
- * File: 0-main.c
- *
- * Made by Nixon
- */
-
 #include "main.h"
 
 /**
- * main - tests if number is +ve or -ve
+ * main - tests function that prints if integer is positive or negative
  *
- * Return: 0 always
+ * Return: 0
  */
 
 int main(void)
