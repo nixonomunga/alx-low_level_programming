@@ -14,26 +14,21 @@
 
 int main(void)
 {
-	int a = 50;
+	int limit = 50;
 	int i;
-	int _fib_seq[a];
+	int start_1 = 1;
+	int start_2 = 2;
+	int _next;
 
-	_fib_seq[0] = 1;
-	_fib_seq[1] = 2;
-
-	for (i = 2; i < a; i++)
+	for (i = 2; i < limit; i++)
 	{
-		_fib_seq[i] = _fib_seq[i - 1] + _fib_seq[i - 2];
-	}
+		printf("%d, %d", start_1, start_2);
 
-	for (i = 0; i < a; i++)
-	{
-		printf("%d", _fib_seq[i]);
+		_next = start_1 + start_2;
+		printf(", %d", _next);
 
-		if (i < (a - 1))
-		{
-			printf(", ");
-		}
+		start_1 = start_2;
+		start_2 = _next;
 	}
 
 	printf("\n");
