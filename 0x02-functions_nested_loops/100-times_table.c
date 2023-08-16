@@ -23,9 +23,9 @@ void print_times_table(int n)
 		return;
 	}
 
-	for (x = 0; x <= 15; x++)
+	for (x = 0; x <= n; x++)
 	{
-		for (y = 0; y <= 15; y++)
+		for (y = 0; y <= n; y++)
 		{
 			result = x * y;
 
