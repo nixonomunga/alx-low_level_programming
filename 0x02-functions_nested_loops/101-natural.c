@@ -20,7 +20,7 @@ int main(void)
 	{
 		if (((x % 3) == 0) || ((x % 5) == 0))
 		{
-			printf("%d", x);
+			printf("%d", i);
 		}
 	}
 
