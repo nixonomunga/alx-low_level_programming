@@ -26,14 +26,12 @@ void print_times_table(int n)
 			if (result < 10)
 			{
 				_putchar(result + '0');
-				_putchar(',');
 			}
 
 			else if (result >= 10 && result < 100)
 			{
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
-				_putchar(',');
 			}
 
 			else if (result >= 100)
@@ -41,10 +39,12 @@ void print_times_table(int n)
 				_putchar((result / 100) + '0');
 				_putchar(((result / 10) % 10) + '0');
 				_putchar((result % 10) + '0');
-				_putchar(',');
 			}
 			if (y < n)
 			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(' ');
 			}
 		}
