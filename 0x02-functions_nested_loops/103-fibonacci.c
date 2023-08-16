@@ -29,9 +29,8 @@ int main(void)
 		c = current;
 		current += prev;
 		prev = c;
+		printf("%d\n", sum_even);
 	}
-
-	printf("%d\n", sum_even);
 
 	return (0);
 }
