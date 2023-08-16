@@ -14,24 +14,23 @@
 
 int main(void)
 {
-	int i;
-	unsigned long int prev = 1;
-	unsigned long int current = 2;
-	unsigned long int next, sum_even = 0;
-	long limit = 4000000;
+	int prev = 1;
+	int current = 2, c;
+	int sum_even = 0;
+	int limit = 4000000;
 
-	for (i = current; i < limit; i++)
+	while (prev <= limit)
 	{
-		next = current + prev;
-		if (next % 2 == 0)
+		if (prev % 2 == 0)
 		{
-			sum_even += next;
+			sum_even += prev;
 		}
 
-		current = next;
+		c = prev;
 		prev = current;
+		current = c + current
 
-		printf("%lu\n", sum_even);
+		printf("%d\n", sum_even);
 	}
 
 	return (0);
