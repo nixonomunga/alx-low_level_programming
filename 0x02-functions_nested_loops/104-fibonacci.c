@@ -20,6 +20,8 @@ int main(void)
 	unsigned long int next;
 	int limit = 98;
 
+	const unsigned int MOD = 1000000000;
+
 	printf("%lu, %lu", prev, current);
 
 	for (i = current; i < limit; i++)
@@ -30,7 +32,7 @@ int main(void)
 			break;
 		}
 
-		next = current + prev;
+		next = (current + prev) % MOD;
 
 		printf(", %lu", next);
 
