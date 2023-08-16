@@ -1,0 +1,35 @@
+/*
+ * File: 103-fibonacci.c
+ *
+ * Made by: Nixon
+ */
+
+#include <stdio.h>
+
+/**
+ * main - prints even fibonacci numbers
+ *
+ * Return: 0 always
+ */
+
+int main(void)
+{
+	int i;
+	long prev = 1;
+	long current = 2;
+	long next;
+	long limit = 4000000;
+
+	for (i = current; i < limit; i++)
+	{
+		next = current + prev;
+
+		current = next;
+		prev = current;
+
+		if (next % 2 == 0)
+		{
+			printf("%ld\n", next);
+		}
+	}
+}
