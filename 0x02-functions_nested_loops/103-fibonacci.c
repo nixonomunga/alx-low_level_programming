@@ -28,10 +28,10 @@ int main(void)
 
 		c = current;
 		current += i;
-		prev = current;
+		prev = c;
 	}
 
-	printf("%d\n", sum_even;
+	printf("%d\n", sum_even);
 
 	return (0);
 }
