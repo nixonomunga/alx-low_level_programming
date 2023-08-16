@@ -20,9 +20,11 @@ int main(void)
 	{
 		if ((x % 15) == 0)
 		{
-			printf("%d\n", x);
+			printf("%d", x);
 		}
 	}
+
+	printf("\n");
 
 	return (0);
 }
