@@ -28,9 +28,9 @@ int main(void)
 
 	for (i = 0; i < a; i++)
 	{
-		printf("%d", _fib_seq);
+		printf("%d", _fib_seq[i]);
 
-		if (i < (n - 1))
+		if (i < (a - 1))
 		{
 			printf(", ");
 		}
