@@ -5,7 +5,6 @@
  */
 
 #include <stdio.h>
-#include <limits.h>
 
 /**
  * main - prints first 98 fibonacci
@@ -25,7 +24,7 @@ int main(void)
 
 	for (i = current; i < limit; i++)
 	{
-		next = (current + prev) % INT_MAX;
+		next = current + prev;
 
 		printf(", %lu", next);
 
