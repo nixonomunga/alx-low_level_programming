@@ -18,7 +18,7 @@ int main(void)
 
 	for (i = x = 0; i < 1024; i++)
 	{
-		if ((x % 15) == 0)
+		if (((x % 3) == 0) || ((x % 5) == 0))
 		{
 			printf("%d", x);
 		}
