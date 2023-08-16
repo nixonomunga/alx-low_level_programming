@@ -17,8 +17,8 @@ int main(void)
 	int i;
 	long prev = 1;
 	long current = 2;
-	long next;
-	long limit = 4000000;
+	long long next;
+	long long limit = 4000000;
 
 	printf("%ld\n", current);
 
@@ -31,7 +31,7 @@ int main(void)
 
 		if (next % 2 == 0)
 		{
-			printf("%ld\n", next);
+			printf("%lld\n", next);
 		}
 	}
 
