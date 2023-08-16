@@ -23,14 +23,15 @@ int main(void)
 	{
 		if (current % 2 == 0)
 		{
-			sum_even += prev;
+			sum_even += current;
 		}
 
 		c = current;
 		current += prev;
 		prev = c;
-		printf("%d\n", sum_even);
 	}
+
+	printf("%d\n", sum_even);
 
 	return (0);
 }
