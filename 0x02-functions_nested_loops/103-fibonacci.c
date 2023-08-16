@@ -28,7 +28,7 @@ int main(void)
 
 		c = prev;
 		prev = current;
-		current = c + current
+		current = c + current;
 
 		printf("%d\n", sum_even);
 	}
