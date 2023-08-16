@@ -28,8 +28,8 @@ int main(void)
 
 		printf(", %lu", next);
 
-		current = next;
 		prev = current;
+		current = next;
 	}
 
 	return (0);
