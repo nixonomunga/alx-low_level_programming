@@ -15,9 +15,9 @@
 int main(void)
 {
 	int i;
-	unsigned long long int prev = 0;
-	unsigned long long int current = 1;
-	unsigned long long int next, sum_even = 0;
+	unsigned long int prev = 0;
+	unsigned long int current = 1;
+	unsigned long int next, sum_even = 0;
 	long limit = 4000000;
 
 	for (i = current; i < limit; i++)
