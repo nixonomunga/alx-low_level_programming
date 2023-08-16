@@ -15,24 +15,23 @@
 int main(void)
 {
 	int i;
-	long prev = 1;
-	long current = 2;
-	long next;
+	long prev = 0;
+	long current = 1;
+	long next, sum_even = 0;
 	long limit = 4000000;
-
-	printf("%ld\n", current);
 
 	for (i = current; i < limit; i++)
 	{
 		next = current + prev;
+		if (next % 2 == 0)
+		{
+			sum_even += next;
+		}
+
+		printf("%ld\n", sum_even);
 
 		current = next;
 		prev = current;
-
-		if (next % 2 == 0)
-		{
-			printf("%ld\n", next);
-		}
 	}
 
 	return (0);
