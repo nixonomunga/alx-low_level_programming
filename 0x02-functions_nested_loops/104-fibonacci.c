@@ -29,10 +29,12 @@ int main(void)
 			hold_1 = (current + prev) / MOD;
 			hold_2 = (current + prev) % MOD;
 			hold_3 = a + b + hold_1;
-			a = b, b = hold_3;
-			prev = current = hold_2;
+			a = b;
+			b = hold_3;
+			prev = current;
+			current = hold_2;
 
-			printf("%lu%010lu", b, current);
+			printf(", %lu%lu", b, current);
 		}
 		else
 		{
@@ -40,12 +42,7 @@ int main(void)
 			prev = current;
 			current = hold_2;
 
-			printf("%lu", current);
-		}
-
-		if (i != 97)
-		{
-			printf(", ");
+			printf("%, lu", current);
 		}
 	}
 
