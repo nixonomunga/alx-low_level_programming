@@ -27,7 +27,7 @@ int main(void)
 		}
 
 		c = current;
-		current += i;
+		current += prev;
 		prev = c;
 	}
 
