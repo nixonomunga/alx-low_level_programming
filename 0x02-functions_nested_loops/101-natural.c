@@ -14,18 +14,13 @@
 
 int main(void)
 {
-	int x, y, _multiple;
-	int i;
+	int x, i;
 
-	if (((x % 3) == 0) && ((y % 5) == 0))
+	for (i = x = 0; i < 1024; i++)
 	{
-		x = y = 0;
-		_multiple = x * y;
-
-		for (i = x = y = 0; i < 1024; i++)
+		if ((x % 15) == 0)
 		{
-			_multiple /= _multiple;
-			printf("%d\n", _multiple);
+			printf("%d\n", x);
 		}
 	}
 
