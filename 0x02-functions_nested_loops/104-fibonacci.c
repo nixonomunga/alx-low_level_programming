@@ -5,6 +5,7 @@
  */
 
 #include <stdio.h>
+#include <limits.h>
 
 /**
  * main - prints first 98 fibonacci
@@ -20,19 +21,11 @@ int main(void)
 	unsigned long int next;
 	int limit = 98;
 
-	const unsigned int MOD = 1000000000;
-
 	printf("%lu, %lu", prev, current);
 
 	for (i = current; i < limit; i++)
 	{
-		if ((unsigned long)current > (unsigned long)(-1) -
-		    (unsigned long)prev)
-		{
-			break;
-		}
-
-		next = (current + prev) % MOD;
+		next = (current + prev) % INT_MAX;
 
 		printf(", %lu", next);
 
