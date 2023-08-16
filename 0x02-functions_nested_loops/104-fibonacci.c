@@ -20,7 +20,7 @@ int main(void)
 	long next;
 	int limit = 98;
 
-	printf("%d, %d", prev, current);
+	printf("%ld, %ld", prev, current);
 
 	for (i = current; i < limit; i++)
 	{
