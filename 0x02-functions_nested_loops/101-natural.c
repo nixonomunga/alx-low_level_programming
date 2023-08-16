@@ -22,9 +22,9 @@ int main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 		{
 			x += i;
-			printf("%d\n", x);
 		}
 	}
 
+	printf("%d\n", x);
 	return (0);
 }
