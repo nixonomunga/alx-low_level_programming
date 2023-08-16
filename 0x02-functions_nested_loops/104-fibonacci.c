@@ -15,18 +15,18 @@
 int main(void)
 {
 	int i;
-	unsigned int prev = 1;
-	unsigned int current = 2;
-	unsigned int next;
+	unsigned long int prev = 1;
+	unsigned long int current = 2;
+	unsigned long int next;
 	int limit = 98;
 
-	printf("%u, %u", prev, current);
+	printf("%lu, %lu", prev, current);
 
 	for (i = current; i < limit; i++)
 	{
 		next = current + prev;
 
-		printf(", %u", next);
+		printf(", %lu", next);
 
 		prev = current;
 		current = next;
