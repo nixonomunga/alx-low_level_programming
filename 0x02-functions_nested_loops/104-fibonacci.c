@@ -26,7 +26,7 @@ int main(void)
 	{
 		next = current + prev;
 
-		printf(", %lu", next);
+		printf(", %ld", next);
 
 		prev = current;
 		current = next;
