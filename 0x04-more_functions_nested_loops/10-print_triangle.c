@@ -10,6 +10,7 @@
 
 void print_triangle(int size)
 {
+	int i, a, c;
 
 	if (size <= 0)
 	{
@@ -18,18 +19,16 @@ void print_triangle(int size)
 
 	else
 	{
-		int i = 1;
+		i = 1;
 
 		for (; i <= size; i++)
 		{
-			int a;
-
 			for (a = size - i; a >= 1; a--)
 			{
 				_putchar(' ');
 			}
 
-			for (int c = 1; c <= i; c++)
+			for (c = 1; c <= i; c++)
 			{
 				_putchar('#');
 			}
