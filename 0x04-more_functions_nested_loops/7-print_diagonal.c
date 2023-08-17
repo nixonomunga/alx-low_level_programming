@@ -17,11 +17,11 @@ void print_diagonal(int n)
 
 	else
 	{
-		int i = 1;
+		int i = 0;
 
 		for (; i <= n; i++)
 		{
-			int a = 1;
+			int a = 0;
 
 			for (; a <= i; a++)
 			{
