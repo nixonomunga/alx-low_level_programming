@@ -3,7 +3,7 @@
 /**
  * print_line - draws a straight line
  *
- * @n - number of times to be printed
+ * @n: number of times to be printed
  *
  * Return: none
  */
