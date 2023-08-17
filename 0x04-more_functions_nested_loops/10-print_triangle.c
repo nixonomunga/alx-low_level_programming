@@ -23,12 +23,12 @@ void print_triangle(int size)
 		{
 			int a;
 
-			for (a = size - i; a > 1; a--)
+			for (a = size - i; a >= 1; a--)
 			{
 				_putchar(' ');
 			}
 
-			for (int c = 0; c < size; c++)
+			for (int c = 0; c <= i; c++)
 			{
 				_putchar('#');
 			}
