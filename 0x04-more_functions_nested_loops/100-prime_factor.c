@@ -5,6 +5,8 @@
  */
 
 #include <stdio.h>
+#include <math.h>
+
 
 /**
  * main - prints largest prime number
@@ -14,10 +16,11 @@
  * Return: none
  */
 
+
 int main(void)
 {
-	long long int a;
-	long long int c = 612852475143;
+	unsigned long int a;
+	unsigned long int c = 612852475143;
 
 	for (a = 3; a < c; a = a + 2)
 	{
@@ -27,7 +30,7 @@ int main(void)
 		}
 	}
 
-	printf("%lld\n", c);
+	printf("%lu\n", c);
 
 	return (0);
 }
