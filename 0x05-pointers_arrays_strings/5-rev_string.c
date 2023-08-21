@@ -16,6 +16,10 @@ void rev_string(char *s)
 		;
 	for (i = i - 1; s[i] != '\0'; i--)
 	{
+		if (i == ('\n' || ' ' || '\t'))
+		{
+			continue;
+		}
 		_putchar(s[i]);
 	}
 }
