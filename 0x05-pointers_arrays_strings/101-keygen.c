@@ -5,15 +5,16 @@
 void random_password_generator(int n)
 {
 	int i = 0;
+	int random_num = 0;
 
 	srand((unsigned int)(time(NULL)));
 
-	char num[] = "0123456789";
+	char numbers_[] = "0123456789";
 	char small_letters[] = "a..z";
 	char caps[] = "A..Z";
 	char symbols[] = "!@#$%^&*-_";
 
-	char password[n];
+	char _password[n];
 
 	for (i = 0; i < n; i++)
 	{
@@ -25,7 +26,7 @@ void random_password_generator(int n)
 		}
 		else if (random_num == 2)
 		{
-			password[i] = small_letter[rand() % 26];
+			password[i] = small_letters[rand() % 26];
 			random_num = rand() % 4;
 			printf("%c", password[i]);
 		}
