@@ -15,7 +15,7 @@ void random_password_generator(int n)
 
 	char password[n];
 
-	for (i = 0; i < N; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (random_num == 1)
 		{
