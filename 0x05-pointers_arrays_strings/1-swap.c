@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * swap_int - swaps integers
  *
