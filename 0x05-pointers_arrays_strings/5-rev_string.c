@@ -8,6 +8,14 @@
  * Return: none
  */
 
+void swap_char(char *a, char *b)
+{
+	char n = *a;
+	*a = *b;
+	*b = n;
+}
+
+
 void rev_string(char *s)
 {
 	char *start = s;
@@ -21,7 +29,7 @@ void rev_string(char *s)
 
 	while (start < end)
 	{
-		swap_int(start, end);
+		swap_char(start, end);
 		start++;
 		end--;
 	}
