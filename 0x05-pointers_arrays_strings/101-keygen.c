@@ -20,27 +20,27 @@ void random_password_generator(int n)
 	{
 		if (random_num == 1)
 		{
-			password[i] = num[rand() % 10];
+			_password[i] = numbers_[rand() % 10];
 			random_num = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", _password[i]);
 		}
 		else if (random_num == 2)
 		{
-			password[i] = small_letters[rand() % 26];
+			_password[i] = small_letters[rand() % 26];
 			random_num = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", _password[i]);
 		}
 		else if (random_num == 3)
 		{
-			password[i] = caps[rand() % 26];
+			_password[i] = caps[rand() % 26];
 			random_num = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", _password[i]);
 		}
 		else
 		{
-			password[i] = symbols[rand() % 10];
+			_password[i] = symbols[rand() % 10];
 			random_num = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c", _password[i]);
 		}
 	}
 }
