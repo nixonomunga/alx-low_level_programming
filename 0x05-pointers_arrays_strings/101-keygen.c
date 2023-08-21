@@ -9,14 +9,14 @@ void random_password_generator(int n)
 
 	srand((unsigned int)(time(NULL)));
 
-	char numbers_[] = "0123456789";
+	char numbers_[] = "0..9";
 	char small_letters[] = "a..z";
 	char caps[] = "A..Z";
 	char symbols[] = "!@#$%^&*-_";
 
-	char _password[n];
+	char _password[N];
 
-	for (i = 0; i < n; i++)
+	for (i = 0; i < N; i++)
 	{
 		if (random_num == 1)
 		{
