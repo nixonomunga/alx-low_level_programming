@@ -23,10 +23,18 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (int i = 0; needle[i]; i++)
 		{
-			if (haystack[i] == needle[i])
+			if (haystack[i] != needle[i])
 			{
-				return (haystack);
+				break;
 			}
+		}
+		if (i != n)
+		{
+			haystack++;
+		}
+		else
+		{
+			return (haystack);
 		}
 	}
 	return (NULL);
