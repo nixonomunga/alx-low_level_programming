@@ -11,25 +11,25 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int j;
-	int acceptChar[256] = 0;
+	unsigned int i, k;
+	int n = 0;
 
-	for (int i = 0; accept[i]; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		acceptChar[(unsigned char)accept[i]] = 1;
-	}
-
-	for (int i = 0; s[i]; i++)
-	{
-		if (acceptChar[(unsigned char)s[i]])
+		if (s[i] != 32)
 		{
-			j++;
+			for (k = 0; accept[k] != '\0'; k++)
+			{
+				if (s[i] == accept[k])
+				{
+					n++;
+				}
+			}
 		}
 		else
 		{
-			break;
+			return (n);
 		}
 	}
-
-	return (j);
+	return (n);
 }
