@@ -9,7 +9,7 @@
  * Return: 1 if prime else 0
  */
 
-int _multiple (int n, int x)
+int _multiple(int n, int x)
 {
 	if (x == n)
 	{
