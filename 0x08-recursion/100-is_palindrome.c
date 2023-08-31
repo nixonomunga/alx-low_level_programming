@@ -37,7 +37,7 @@ int _checker(char *s, int n, int m)
 		}
 		else
 		{
-			return (_checker(s, i + 1, m - 1));
+			return (_checker(s, n + 1, m - 1));
 		}
 	}
 	else
