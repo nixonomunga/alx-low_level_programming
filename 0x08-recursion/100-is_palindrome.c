@@ -47,7 +47,7 @@ int _checker(char *s, int n, int m)
 
 
 /**
- * is _palindrome - checks if string is palindrome
+ * is_palindrome - checks if string is palindrome
  *
  * @s: string to be checked
  *
