@@ -22,7 +22,6 @@ int _strlen(char *s)
  *
  * @s: string to be checked
  * @n: left char of string
- * @m: right char of string
  *
  * Return: true of false
  */
