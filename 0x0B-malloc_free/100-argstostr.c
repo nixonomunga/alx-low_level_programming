@@ -18,8 +18,10 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	int i, total_length = 0;
+	int i;
+	int total_length = 0;
 	int position = 0;
+	char *result;
 
 	for (i = 0; i < ac; i++)
 	{
@@ -29,7 +31,7 @@ char *argstostr(int ac, char **av)
 		}
 	}
 
-	char *result = (char *)malloc(total_length + 1);
+	result = (char *)malloc(total_length + 1);
 
 	if (result == NULL)
 	{
