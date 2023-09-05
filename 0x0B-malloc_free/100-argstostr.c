@@ -18,12 +18,11 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	int i;
 	int total_length = 0;
 	int position = 0;
 	char *result;
 
-	for (i = 0; i < ac; i++)
+	for (int i = 0; i < ac; i++)
 	{
 		if (av[i] != NULL)
 		{
@@ -38,7 +37,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	for (i = 0; i < ac; i++)
+	for (int i = 0; i < ac; i++)
 	{
 		if (av[i] != NULL)
 		{
