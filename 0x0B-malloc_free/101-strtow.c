@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * strtow - splits string into words
@@ -10,70 +11,33 @@
 
 char **strtow(char *str)
 {
-	int i, j, word_counnt = 0, in_word = 0, word_index = 0, word_start = 0;
-	char **words
+	char *words = NULL;
+	int i = 0, j = 0, n;
 
-	if (str == NULL || *str == '\0')
-		return (NULL);
-	for (i = 0; str[i] != '\0'; i++)
+	if (strncmp(str, "", 1) || str == NULL)
 	{
-		if (str[i] == ' ')
-		{
-			in_word = 0;
-		}
-		else if (in_word == 0)
-		{
-			in_word = 1;
-			word_count++;
-		}
+		return (NULL);
 	}
-	words = (char **)malloc((word_count + 1) * sizeof(char *));
+
+	words = malloc((i + j + 1) * sizeof(char));
 
 	if (words == NULL)
+	{
 		return (NULL);
-
-	for (i = 0; str[i] != '\0'; i++)
-	{
-		if (str[i] == ' ')
-		{
-			if (in_word)
-			{
-				str[i] = '\0';
-				words[wod_index] = strdup(&str[word_start]);
-				if (words[word_index] == NULL)
-				{
-					for (j = 0; j < word_index; j++)
-					{
-						free(words[j]);
-					}
-					free(words);
-					return (NULL);
-				}
-				word_index++;
-				in_word = 0;
-			}
-		}
-		else if (in_word == 0)
-		{
-			word_start = i;
-			in_word = 1;
-		}
 	}
 
-	if (in_word)
+	for (n = 0; n < i; n++)
 	{
-		words[word_index] = strdup(&str[word_start]);
-		if (words[word_index] == NULL)
-		{
-			for (j = 0; j <= word_index; j++)
-			{
-				free(word[j]);
-			}
-			free(words);
-			return (NULL);
-		}
-		word_index++;
+		words[n] = str[n];
 	}
-	words[word_index] = NULL;
-	return (words);
+
+	i = n;
+	for (n = 0; n < j; n++)
+	{
+		words[i] = str[n];
+		i++;
+	}
+
+	words[i] = '\0';
+	return (NULL);
 }
