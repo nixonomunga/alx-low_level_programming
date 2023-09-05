@@ -19,6 +19,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	int i, total_length = 0;
+	int position = 0;
 
 	for (i = 0; i < ac; i++)
 	{
@@ -28,14 +29,12 @@ char *argstostr(int ac, char **av)
 		}
 	}
 
-	char *result = (char *)malloc(totaal_length + 1);
+	char *result = (char *)malloc(total_length + 1);
 
 	if (result == NULL)
 	{
 		return (NULL);
 	}
-
-	int position = 0;
 
 	for (i = 0; i < ac; i++)
 	{
