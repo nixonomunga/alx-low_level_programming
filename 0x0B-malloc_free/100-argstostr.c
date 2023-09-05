@@ -18,11 +18,8 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	}
 
-	int i, total_length, position;
+	int i, total_length = 0, position = 0;
 	char *result;
-
-	total_length = 0;
-	position = 0;
 
 	for (i = 0; i < ac; i++)
 	{
